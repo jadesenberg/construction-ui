@@ -1,7 +1,14 @@
 'use client';
+
+import dynamic from 'next/dynamic';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { ProjectCard, ProjectCardProps } from '@/components/ProjectCard';
-import { ProjectMap } from '@/components/ProjectMap';
+
+const ProjectMap = dynamic(() =>
+  import('@/components/ProjectMap').then((mod) => mod.ProjectMap),
+  { ssr: false }
+);
+
 import { ProjectFilter } from '@/components/ProjectFilter';
 import { Home } from 'lucide-react';
 

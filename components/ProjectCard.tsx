@@ -24,7 +24,7 @@ export const ProjectCard = ({ name, status, company, location, type }: ProjectCa
         boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
         display: 'flex',
         flexDirection: 'column',
-        width: isMobile ? '100%' : 290,
+        width: '100%',
       }}
     >
       <Box

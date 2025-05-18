@@ -1,12 +1,11 @@
 'use client'
 
-import { Box, Typography, useTheme } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { FilterSidebar } from '@/components/FilterSidebar'
 import { ProductResult } from '@/components/ProductResult'
 import { Home } from 'lucide-react'
 
 export default function ProductsPage() {
-  const theme = useTheme()
 
   return (
     <Box>
