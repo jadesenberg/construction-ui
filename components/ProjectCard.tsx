@@ -1,5 +1,5 @@
 'use client';
-import { Box, Typography, Avatar, Chip, IconButton, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Typography, Avatar, Chip, IconButton } from '@mui/material';
 import { Heart, Share2, MapPin, Building2, CheckCircle, Loader2 } from 'lucide-react';
 
 export interface ProjectCardProps {
@@ -12,8 +12,6 @@ export interface ProjectCardProps {
 
 export const ProjectCard = ({ name, status, company, location, type }: ProjectCardProps) => {
   const isCompleted = status === 'Completed';
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box
